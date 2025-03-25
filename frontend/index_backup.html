@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'components/head.html' %}
+<body>
+    {% include 'components/form.html' %}
+    {% include 'components/predictions.html' %}
+    {% include 'components/processed_image.html' %}
+    {% include 'components/chatbot.html' %}    
+    <script src="/static/scripts/main.js" type="text/javascript"></script>
+
+    <script>
+        // 📌 Injected logic to fetch available_slots with API key
+        fetch("/available_slots/", {
+            headers: {
+                "x-api-key": "12589"
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("✅ Available slots fetched:", data);
+            // Optional: display slots on the page
+        })
+        .catch(error => {
+            console.error("❌ Failed to fetch slots:", error);
+        });
+    </script>
+</body>
+</html>

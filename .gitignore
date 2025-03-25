@@ -1,0 +1,50 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment files
+.env
+.venv/
+venv/
+*.env
+
+# Data and Models (especially if large or sensitive)
+data/
+models/
+*.pt
+*.pth
+*.pkl
+*.h5
+*.onnx
+*.json  # Only if it's sensitive like credentials
+*.csv   # Only if it contains real data, e.g., user info
+
+# YOLO training runs and weights
+runs/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.swp
+*.swo
+
+__pycache__/
+*.pyc
+venv/
+.vscode/
+.DS_Store
+Thumbs.db
+*.json

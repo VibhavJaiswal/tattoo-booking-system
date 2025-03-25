@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard – Tattoo Bookings</title>
+    <link rel="stylesheet" href="/static/styles/inline.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>📋 Upcoming Tattoo Bookings</h1>
+    <table id="bookingsTable">
+        <thead>
+            <tr>
+                <th>Summary</th>
+                <th>Description</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Event ID</th>
+            </tr>
+        </thead>
+        <tbody id="bookingsBody">
+            <!-- Bookings will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="/static/scripts/admin.js"></script>
+</body>
+</html>
