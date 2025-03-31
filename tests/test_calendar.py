@@ -1,11 +1,14 @@
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
+from dotenv import load_dotenv
+import os
 
-# Path to your credentials.json file
-SERVICE_ACCOUNT_FILE = "C:/Users/mailv/Documents/Upwork/AI Developer for Custom Tattoo Booking and Scheduling System/tattoo-booking-ai-b1218efcac81.json"
+# Load environment variables from .env file
+load_dotenv()
 
-# Define API scope
-SCOPES = ["https://www.googleapis.com/auth/calendar"]
+# Get variables from environment
+SERVICE_ACCOUNT_FILE = os.getenv("SERVICE_ACCOUNT_FILE")
+SCOPES = [os.getenv("SCOPES")]
 
 # Authenticate using service account
 credentials = service_account.Credentials.from_service_account_file(
