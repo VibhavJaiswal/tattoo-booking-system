@@ -76,13 +76,15 @@ Create a `.env` file (you can start with `.env.example`) and add your API keys, 
 
 ## 🤖 Model Files
 
-Large model files are **not included** in the repo.
+Large model files are **not included** in this repository.
 
-Please download the following and place them in the correct folders:
-- `best.pt` (YOLOv8 weights)
-- `tattoo_classifier.pth` (PyTorch classifier model)
+This project uses pretrained models:
+- `best.pt` or `yolov8n.pt` (YOLOv8 from [Ultralytics](https://github.com/ultralytics/yolov5))
+- `tattoo_classifier.pth` (a PyTorch classifier based on publicly available architectures)
 
-👉 Store them in `/models/` and update the `.env` paths.
+⚠️ These models are used strictly for demonstration and educational purposes.
+
+Please download them separately and place in the `/models/` folder. Do not redistribute.
 
 ---
 
@@ -113,11 +115,9 @@ This interface allows users to upload tattoo references, get AI-based estimates,
 
 ## 📄 License
 
-This project is currently not licensed for public or commercial use.
+It is intended strictly for educational and portfolio demonstration purposes only.
 
-It is intended for educational and portfolio demonstration purposes only.
-
-You may explore the code, but please do not reproduce, distribute, or use it in production without the author's permission.
+No pretrained models are redistributed with this codebase. Users must acquire models from official sources and follow their respective licenses.
 
 ---
 
